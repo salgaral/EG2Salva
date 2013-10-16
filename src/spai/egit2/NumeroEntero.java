@@ -32,7 +32,7 @@ public class NumeroEntero {
     }
     
     public int multiplicar(NumeroEntero numero){
-    	return -1;
+    	return this.valor * numero.valor;
     }
 
 }
