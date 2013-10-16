@@ -55,7 +55,7 @@ public class FraccionTest {
 	@Test
 	public void testMenor() {
 		Fraccion f1 = new Fraccion(1, 3);
-		assertEquals(1/3, this.fraccion.menor(f1));
+		 assertEquals(0.33, this.fraccion.menor(f1), 1e-2);
 	}
 	
 	@Test
