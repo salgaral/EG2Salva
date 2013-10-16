@@ -44,5 +44,24 @@ public class FraccionTest {
     public void testDecimal() {
         assertEquals(2.0/3.0, fraccion.decimal(), 1e-10);
     }
+	@Test
+	public void testSumar() {
+		Fraccion f1 = new Fraccion(1, 3);
+		Fraccion total = this.fraccion.sumar(f1);
+		assertEquals(9, total.getDenominador());
+		assertEquals(9, total.getNumerador());
+
+	}
+	@Test
+	public void testMenor() {
+		Fraccion f1 = new Fraccion(1, 3);
+		assertEquals(1/3, this.fraccion.menor(f1));
+	}
+	
+	@Test
+	public void testEquivalente() {
+		Fraccion f1 = new Fraccion(4, 6);
+		assertTrue(this.fraccion.isEquivalente(f1));
+	}
 
 }
