@@ -47,5 +47,11 @@ public class NumeroEnteroTest {
         this.numero.decrementar();
         assertEquals(-1, numero.getValor());
     }
+    
+    @Test
+    public void testMultiplicar(){
+    	NumeroEntero num = new NumeroEntero(9);
+    	 assertEquals(900, numero.multiplicar(num));
+    }
 
 }
