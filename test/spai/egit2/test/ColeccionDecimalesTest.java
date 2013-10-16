@@ -25,5 +25,10 @@ public class ColeccionDecimalesTest {
     public void testMayor() {
         assertEquals(3.4, this.numeros.mayor(), 1e-10);
     }
+    
+    @Test
+    public void testMultiplicar(){
+    	assertEquals(4.896, this.numeros.multiplicar(), 1e-10);
+    }
 
 }
