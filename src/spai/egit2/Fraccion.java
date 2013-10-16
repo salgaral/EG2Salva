@@ -68,7 +68,9 @@ public class Fraccion {
     }
     
     public Fraccion sumar(Fraccion fraccion){
-    	return null;
+    	this.numerador = (this.numerador * fraccion.denominador) + (this.denominador * fraccion.numerador);
+    	this.denominador = (this.denominador * fraccion.denominador);
+    	return this;
     }
 
 	public Fraccion menor(Fraccion fraccion) {
