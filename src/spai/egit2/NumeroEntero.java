@@ -30,5 +30,9 @@ public class NumeroEntero {
     public void decrementar() {
         this.valor--;
     }
+    
+    public int multiplicar(NumeroEntero numero){
+    	return -1;
+    }
 
 }
