@@ -40,7 +40,7 @@ public class Persona {
     }
     
     public String mayusculas() {
-        return null;
+        return this.getNombre().toUpperCase();
     }
 
 }

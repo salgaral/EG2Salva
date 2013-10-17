@@ -89,7 +89,8 @@ public class Fraccion {
 	}
 
 	public boolean isEquivalente(Fraccion fraccion) {
-		return false;
+		return (this.getNumerador() * fraccion.getDenominador()) == (this
+				.getDenominador() * fraccion.getNumerador());
 	}
 
 }
